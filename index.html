@@ -86,6 +86,11 @@
         /* My Music Section */
         #music {
             background: #3B1C32;
+            text-align: center;
+        }
+        #music audio {
+            margin: 15px 0;
+            display: block;
         }
         #music img {
             width: 100%;
@@ -173,11 +178,17 @@
         <h2>My Music</h2>
         <h3>Clips</h3>
         <audio controls>
-            <source src="audio/myguitar.mp3" type="audio/mpeg">
+            <source src="audio/clip1.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <h3>Favorite Song to Play</h3>
-        <p>"Stairway to Heaven" by Led Zeppelin</p>
+        <audio controls>
+            <source src="audio/clip2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio controls>
+            <source src="audio/clip3.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
         <h3>Dream Guitar</h3>
         <img src="images/dream_guitar.jpg" alt="Dream Electric Guitar">
     </section>
@@ -205,8 +216,12 @@
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Expression Through Guitar. All Rights Reserved.</p>
-    </footer>
+  <section id="thank-you">
+    <h2>Thank You!</h2>
+    <p>Thank you for visiting my creative space. I hope you found inspiration in my music, art, and passion for self-expression. Feel free to reach out through the contact form above or directly via email.</p>
+    <div class="contact-email">
+        <a href="mailto:n25nguye@uwaterloo.ca">n25nguye@uwaterloo.ca</a>
+    </div>
+</section>
 </body>
 </html>

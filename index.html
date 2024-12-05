@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expression Through Guitar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1A1A1D;
+            color: #ffffff;
+        }
+        header {
+            background: #A64D79;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        nav {
+            background: #3B1C32;
+            text-align: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #A64D79;
+        }
+        section {
+            padding: 60px 20px;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        footer {
+            background: #3B1C32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Welcome Page */
+        #welcome {
+            background: #6A1E55;
+            text-align: center;
+        }
+        #welcome img {
+            width: 300px;
+            margin: 20px 0;
+        }
+
+        /* About Me Section */
+        #about {
+            background: #1A1A1D;
+            text-align: center;
+        }
+
+        /* My Music Section */
+        #music {
+            background: #3B1C32;
+        }
+        #music img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Gallery Section */
+        #gallery {
+            background: #6A1E55;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #gallery img {
+            width: 250px;
+            margin: 10px;
+            border: 5px solid #A64D79;
+            border-radius: 10px;
+        }
+
+        /* Contact Form */
+        #contact {
+            background: #1A1A1D;
+        }
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        #contact form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        #contact form input,
+        #contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #contact form button {
+            background: #A64D79;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #contact form button:hover {
+            background: #6A1E55;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Expression Through Guitar</h1>
+        <p>Exploring the world of music, art, and fashion</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#welcome">Welcome</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#music">My Music</a></li>
+            <li><a href="#gallery">Other Expressions</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="welcome">
+        <h2>Welcome</h2>
+        <p>Welcome to my creative space where I express myself through guitar, art, and fashion. Music is my soul's voice.</p>
+        <img src="images/guitar.png" alt="Guitar">
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate guitarist who loves to explore different means of self-expression. Music, art, and fashion inspire me to connect with the world.</p>
+    </section>
+
+    <section id="music">
+        <h2>My Music</h2>
+        <h3>Clips</h3>
+        <audio controls>
+            <source src="audio/myguitar.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <h3>Favorite Song to Play</h3>
+        <p>"Stairway to Heaven" by Led Zeppelin</p>
+        <h3>Dream Guitar</h3>
+        <img src="images/dream_guitar.jpg" alt="Dream Electric Guitar">
+    </section>
+
+    <section id="gallery">
+        <h2>Other Means of Expression</h2>
+        <img src="images/art.jpg" alt="Art">
+        <img src="images/music.jpg" alt="Music">
+        <img src="images/fashion.jpg" alt="Fashion">
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Expression Through Guitar. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

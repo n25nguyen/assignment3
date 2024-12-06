@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expression Through Guitar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         /* General Styles */
         body {
@@ -20,10 +20,12 @@
             padding: 50px 20px;
         }
         header h1 {
+            font-family: 'Abhaya Libre', serif;
             font-size: 3rem;
             margin: 0;
         }
         header p {
+            font-family: 'Abhaya Libre', serif;
             font-size: 1.2rem;
             margin: 10px 0;
         }
@@ -56,6 +58,7 @@
             padding: 60px 20px;
         }
         section h2 {
+            font-family: 'Abhaya Libre', serif;
             font-size: 2.5rem;
             text-align: center;
             margin-bottom: 20px;
@@ -69,8 +72,11 @@
 
         /* Welcome Page */
         #welcome {
-            background: #6A1E55;
+            background: url("images/guitar.jpg") no-repeat center center/cover;
             text-align: center;
+            color: white;
+            padding: 120px 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
         #welcome img {
             width: 300px;
@@ -81,6 +87,12 @@
         #about {
             background: #1A1A1D;
             text-align: center;
+        }
+        #about p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
         }
 
         /* My Music Section */
@@ -105,9 +117,10 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            gap: 20px;
         }
         #gallery img {
-            width: 250px;
+            width: 300px;
             margin: 10px;
             border: 5px solid #A64D79;
             border-radius: 10px;
@@ -146,6 +159,50 @@
         #contact form button:hover {
             background: #6A1E55;
         }
+
+        /* Thank You Section */
+        #thank-you {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #3B1C32;
+        }
+        .contact-email {
+            margin-top: 20px;
+        }
+        .contact-email a {
+            color: #A64D79;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        /* Media Queries for Desktop */
+        @media (min-width: 1024px) {
+            header h1 {
+                font-size: 4rem;
+            }
+            header p {
+                font-size: 1.5rem;
+            }
+            nav ul li {
+                margin: 0 25px;
+            }
+            #about p {
+                font-size: 1.4rem;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            #gallery {
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+            }
+            #gallery img {
+                width: 350px;
+            }
+            #contact form {
+                max-width: 700px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -171,7 +228,8 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a passionate guitarist who loves to explore different means of self-expression. Music, art, and fashion inspire me to connect with the world.</p>
+        <p>I am a passionate guitarist who loves to explore different means of self-expression. Music, art, and fashion inspire me to connect with the world. My journey in music started when I was young, captivated by the sounds of the guitar. Over the years, I've delved into the intricate details of music, always searching for new techniques to express myself.</p>
+        <p>Art and fashion have been essential to my creative exploration, allowing me to extend my self-expression beyond sound. These fields offer infinite ways to interpret and communicate my experiences and emotions. Each form of creativity speaks in its own unique way, and I embrace them all.</p>
     </section>
 
     <section id="music">
@@ -196,7 +254,7 @@
     <section id="gallery">
         <h2>Other Means of Expression</h2>
         <img src="images/art.jpg" alt="Art">
-        <img src="images/music.jpg" alt="Music">
+        <img src="images/writing.jpg" alt="Writing">
         <img src="images/fashion.jpg" alt="Fashion">
     </section>
 
@@ -216,12 +274,12 @@
         </form>
     </section>
 
-  <section id="thank-you">
-    <h2>Thank You!</h2>
-    <p>Thank you for visiting my creative space. I hope you found inspiration in my music, art, and passion for self-expression. Feel free to reach out through the contact form above or directly via email.</p>
-    <div class="contact-email">
-        <a href="mailto:n25nguye@uwaterloo.ca">n25nguye@uwaterloo.ca</a>
-    </div>
-</section>
+    <section id="thank-you">
+        <h2>Thank You!</h2>
+        <p>Thank you for visiting my creative space. I hope you found inspiration in my music, art, and passion for self-expression. Feel free to reach out through the contact form above or directly via email.</p>
+        <div class="contact-email">
+            <a href="mailto:n25nguye@uwaterloo.ca">n25nguye@uwaterloo.ca</a>
+        </div>
+    </section>
 </body>
 </html>

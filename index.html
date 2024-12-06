@@ -41,9 +41,6 @@
             background: #3B1C32;
             text-align: center;
             padding: 20px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
 
         nav ul {
@@ -65,29 +62,22 @@
             font-size: 1.1rem;
         }
 
-        nav ul li a:hover {
-            color: #A64D79;
-        }
-
         section {
-            padding: 80px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+            padding: 60px 20px;
         }
 
         section h2 {
             font-family: 'Abhaya Libre', serif;
-            font-size: 3rem;
+            font-size: 2.5rem;
             text-align: center;
-            margin-bottom: 30px;
-            color: #F0E6F6;
+            margin-bottom: 20px;
         }
 
         footer {
             background: #3B1C32;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 20px;
         }
 
         /* Welcome Page */
@@ -109,17 +99,11 @@
         }
 
         #welcome h2 {
-            margin-bottom: 15px;
-            font-size: 3.5rem;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin-bottom: 10px; /* Space between header and paragraph */
         }
 
         #welcome p {
-            font-size: 1.5rem;
-            margin-top: 15px;
-            color: #F0E6F6;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            margin-top: 10px; /* Additional space between header and paragraph */
         }
 
         /* About Me Section */
@@ -129,18 +113,16 @@
         }
 
         #about p {
-            font-size: 1.4rem;
-            max-width: 1000px;
+            font-size: 1.2rem;
+            max-width: 800px;
             margin: 0 auto;
-            line-height: 1.8;
-            color: #F0E6F6;
+            line-height: 1.6;
         }
 
         /* My Music Section */
         #music {
             background: #3B1C32;
             text-align: center;
-            padding-bottom: 60px;
         }
 
         #music img {
@@ -150,20 +132,14 @@
             margin: 20px auto;
         }
 
-        #music h3 {
-            font-size: 2rem;
-            margin-top: 30px;
-            color: #F0E6F6;
-        }
-
         /* Gallery Section */
         #gallery {
             background: #6A1E55;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 30px;
-            padding-bottom: 60px;
+            gap: 20px;
+            padding: 40px 20px;
         }
 
         #gallery img {
@@ -176,41 +152,36 @@
         /* Contact Form */
         #contact {
             background: #1A1A1D;
-            padding-bottom: 60px;
         }
 
         #contact form {
-            max-width: 700px;
+            max-width: 600px;
             margin: 0 auto;
             text-align: left;
         }
 
         #contact form label {
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             font-weight: bold;
-            font-size: 1.1rem;
-            color: #F0E6F6;
         }
 
         #contact form input,
         #contact form textarea {
             width: 100%;
-            padding: 15px;
-            margin-bottom: 20px;
+            padding: 10px;
+            margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            font-size: 1rem;
         }
 
         #contact form button {
             background: #A64D79;
             color: white;
-            padding: 15px 25px;
+            padding: 10px 15px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 1.2rem;
         }
 
         #contact form button:hover {
@@ -231,44 +202,40 @@
         .contact-email a {
             color: #A64D79;
             text-decoration: none;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
 
         /* Media Queries for Desktop */
         @media (min-width: 1024px) {
             header h1 {
-                font-size: 4.5rem;
+                font-size: 4rem;
             }
 
             header p {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
             }
 
             nav ul li {
-                margin: 0 30px;
+                margin: 0 25px;
             }
 
             #about p {
-                font-size: 1.6rem;
-                max-width: 1200px;
+                font-size: 1.4rem;
+                max-width: 1000px;
                 margin: 0 auto;
             }
 
-            #music img {
-                max-width: 700px;
+            #gallery {
+                flex-wrap: nowrap;
+                justify-content: flex-start; /* Align images in a row on desktop */
             }
 
             #gallery img {
-                width: 350px;
+                width: 300px;
             }
 
             #contact form {
-                max-width: 800px;
-            }
-
-            /* Add a more spacious layout for sections */
-            section {
-                padding: 100px 40px;
+                max-width: 700px;
             }
         }
     </style>
@@ -326,22 +293,21 @@
         <h2>Contact Me</h2>
         <form>
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            
+            <input type="text" id="name" name="name" placeholder="Your Name">
+
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            
+            <input type="email" id="email" name="email" placeholder="Your Email">
+
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
-            
+            <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+
             <button type="submit">Send Message</button>
         </form>
     </section>
 
     <section id="thank-you">
-        <h2>Thank You!</h2>
-        <p>Thank you for visiting my creative space. I hope you found inspiration in my music, art, and fashion journey.</p>
-        <p class="contact-email">Feel free to reach out to me anytime. You can email me at <a href="mailto:n25nguye@uwaterloo.ca">n25nguye@uwaterloo.ca</a></p>
+        <h2>Thank you!</h2>
+        <p>I am a learning, passionate guitarist who loves to explore different means of self-expression. Music, art, and fashion inspire me to connect with the world.</p>
     </section>
 </body>
 </html>

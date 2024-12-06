@@ -135,16 +135,24 @@
         /* Gallery Section */
         #gallery {
             background: #6A1E55;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
+            text-align: center;
             padding: 40px 20px;
         }
 
-        #gallery img {
+        #gallery h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .gallery-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .gallery-row img {
             width: 300px;
-            margin: 10px;
             border: 5px solid #A64D79;
             border-radius: 10px;
         }
@@ -226,11 +234,14 @@
             }
 
             #gallery {
-                flex-wrap: nowrap;
-                justify-content: flex-start; /* Align images in a row on desktop */
+                text-align: left;
             }
 
-            #gallery img {
+            .gallery-row {
+                justify-content: flex-start; /* Align images in a row */
+            }
+
+            .gallery-row img {
                 width: 300px;
             }
 
@@ -284,14 +295,16 @@
 
     <section id="gallery">
         <h2>Other Means of Expression</h2>
-        <img src="art.jpg" alt="Art">
-        <img src="writing.jpg" alt="Writing">
-        <img src="fashion.JPG" alt="Fashion">
+        <div class="gallery-row">
+            <img src="art.jpg" alt="Art">
+            <img src="writing.jpg" alt="Writing">
+            <img src="fashion.JPG" alt="Fashion">
+        </div>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form>
+        <form action="#">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your Name">
 
@@ -306,8 +319,15 @@
     </section>
 
     <section id="thank-you">
-        <h2>Thank you!</h2>
-        <p>I am a learning, passionate guitarist who loves to explore different means of self-expression. Music, art, and fashion inspire me to connect with the world.</p>
+        <h2>Thank you for your message!</h2>
+        <p>Your message has been sent successfully. I will get back to you as soon as possible.</p>
+        <div class="contact-email">
+            <p>For urgent inquiries, email me directly at <a href="mailto:me@example.com">me@example.com</a></p>
+        </div>
     </section>
+
+    <footer>
+        <p>&copy; 2024 Expression Through Guitar. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

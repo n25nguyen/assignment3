@@ -245,18 +245,18 @@
 }
 
 .gallery-row {
-    display: flex;
-    justify-content: center; /* Ensure images are centered */
-    align-items: center; /* Center images vertically if they are wrapped */
-    gap: 20px;
-    flex-wrap: wrap;
+    display: flex; /* Enable Flexbox for layout */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+    gap: 20px; /* Add spacing between images */
+    flex-wrap: wrap; /* Allow wrapping to a new row on smaller screens */
 }
 
 .gallery-row img {
-    width: 300px;
-    border: 5px solid #A64D79;
-    border-radius: 10px;
-    margin: 10px; /* Adds spacing around each image */
+    width: 300px; /* Set a consistent width */
+    height: auto; /* Maintain aspect ratio */
+    border: 5px solid #A64D79; /* Add border */
+    border-radius: 10px; /* Rounded corners */
 }
 
             #contact form {
@@ -316,13 +316,13 @@
     </section>
 
     <section id="gallery">
-        <h2>Other Means of Expression</h2>
-        <div class="gallery-row">
-            <img src="art.jpg" alt="Art">
-            <img src="fashion.JPG" alt="Fashion">
-            <img src="writing.jpg" alt="Writing">
-        </div>
-    </section>
+    <h2>Other Means of Expression</h2>
+    <div class="gallery-row">
+        <img src="art.jpg" alt="Art">
+        <img src="fashion.JPG" alt="Fashion">
+        <img src="writing.jpg" alt="Writing">
+    </div>
+</section>
 
     <section id="contact">
         <h2>Contact Me</h2>

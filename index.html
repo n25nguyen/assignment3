@@ -73,13 +73,6 @@
             margin-bottom: 20px;
         }
 
-        footer {
-            background: #3B1C32;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
         /* Welcome Page */
         #welcome {
             background: url("guitar.jpg") no-repeat center center/cover;
@@ -282,7 +275,7 @@
         <h2>My Music</h2>
         <h3>Favorite Songs to Play</h3>
         <p>Some of my favorite songs to play on the guitar are:</p>
-        <ul>
+        <ul style="list-style: none; padding: 0;">
             <li>Watermelon, John + Jane Q. Public</li>
             <li>Sailor Song, Gigi Perez</li>
             <li>Bring Me to Life, Evanescence</li>
@@ -306,23 +299,20 @@
         <h2>Contact Me</h2>
         <form action="#">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name">
-
+            <input type="text" id="name" name="name" required>
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email">
-
+            <input type="email" id="email" name="email" required>
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
-
+            <textarea id="message" name="message" rows="4" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
 
     <section id="thank-you">
-        <h2>Thank you for your message!</h2>
-        <p>Your message has been sent successfully. I will get back to you as soon as possible.</p>
+        <h2>Thank You!</h2>
+        <p>Thank you for reaching out! Your message has been successfully sent, and I look forward to connecting with you. Stay tuned for updates and new creations!</p>
         <div class="contact-email">
-            <p>For urgent inquiries, email me directly at <a href="mailto:me@example.com">me@example.com</a></p>
+            <p>For immediate inquiries, please email me at <a href="mailto:n25nguye@uwaterloo.ca">n25nguye@uwaterloo.ca</a></p>
         </div>
     </section>
 </body>

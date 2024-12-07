@@ -73,6 +73,13 @@
             margin-bottom: 20px;
         }
 
+        footer {
+            background: #3B1C32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
         /* Welcome Page */
         #welcome {
             background: url("guitar.jpg") no-repeat center center/cover;
@@ -242,6 +249,14 @@
                 max-width: 700px;
             }
         }
+
+        /* Remove bullet points in the "My Music" section */
+        #music ul {
+            list-style-type: none; /* Removes the bullet points */
+            padding: 0; /* Removes default padding */
+            margin: 0; /* Removes default margin */
+        }
+
     </style>
 </head>
 <body>
@@ -262,12 +277,12 @@
 
     <section id="welcome">
         <h2>Welcome</h2>
-        <p>Welcome to my creative space where I express myself through guitar, art, and fashion. Music is my soul's voice.</p>
+        <p>Welcome to my creative space where I express myself through guitar, art, and fashion. Music is my soul's voice. I am a student with many hobbies where I find that I am able to express myself as well as my views. I wish to continue exploring these hobbies, as they allow me to grow, connect with others, and discover new ways to communicate my thoughts and feelings.</p>
     </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a passionate guitarist who loves to explore different means of self-expression. Music, art, and fashion inspire me to connect with the world. My journey in music started when I was young, captivated by the sounds of the guitar. Over the years, I've delved into the intricate details of music, always searching for new techniques to express myself.</p>
+        <p>My name is Nat Nguyen and I am a passionate guitarist who loves to explore different means of self-expression. Music, art, and fashion inspire me to connect with the world. My journey in music started when I was young, captivated by the sounds of the guitar. Over the years, I've delved into the intricate details of music, always searching for new techniques to express myself.</p>
         <p>Art and fashion have been essential to my creative exploration, allowing me to extend my self-expression beyond sound. These fields offer infinite ways to interpret and communicate my experiences and emotions. Each form of creativity speaks in its own unique way, and I embrace them all.</p>
     </section>
 
@@ -275,7 +290,7 @@
         <h2>My Music</h2>
         <h3>Favorite Songs to Play</h3>
         <p>Some of my favorite songs to play on the guitar are:</p>
-        <ul style="list-style: none; padding: 0;">
+        <ul>
             <li>Watermelon, John + Jane Q. Public</li>
             <li>Sailor Song, Gigi Perez</li>
             <li>Bring Me to Life, Evanescence</li>
@@ -290,29 +305,32 @@
         <h2>Other Means of Expression</h2>
         <div class="gallery-row">
             <img src="art.jpg" alt="Art">
-            <img src="writing.jpg" alt="Writing">
             <img src="fashion.JPG" alt="Fashion">
+            <img src="writing.jpg" alt="Writing">
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
         <form action="#">
-            <label for="name">Name</label>
+            <label for="name">Your Name</label>
             <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
+
+            <label for="email">Your Email</label>
             <input type="email" id="email" name="email" required>
-            <label for="message">Message</label>
+
+            <label for="message">Your Message</label>
             <textarea id="message" name="message" rows="4" required></textarea>
+
             <button type="submit">Send Message</button>
         </form>
     </section>
 
     <section id="thank-you">
-        <h2>Thank You!</h2>
-        <p>Thank you for reaching out! Your message has been successfully sent, and I look forward to connecting with you. Stay tuned for updates and new creations!</p>
+        <h2>Thank you for visiting!</h2>
+        <p>Stay creative and keep expressing yourself!</p>
         <div class="contact-email">
-            <p>For immediate inquiries, please email me at <a href="mailto:n25nguye@uwaterloo.ca">n25nguye@uwaterloo.ca</a></p>
+            <p>If you have any questions or want to get in touch, email me at: <a href="mailto:n25nguye@uwaterloo.ca">n25nguye@uwaterloo.ca</a></p>
         </div>
     </section>
 </body>

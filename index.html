@@ -8,11 +8,12 @@
     <style>
         /* General Styles */
         body {
-            font-family: 'Lora', serif; /* Changed to Lora for the body text */
+            font-family: 'Lora', serif;
             margin: 0;
             padding: 0;
             background-color: #1A1A1D;
             color: #ffffff;
+            line-height: 1.6;
         }
 
         header {
@@ -37,10 +38,14 @@
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
 
+        /* Sticky Navigation */
         nav {
             background: #3B1C32;
             text-align: center;
-            padding: 20px 0;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         nav ul {
@@ -60,6 +65,10 @@
             text-decoration: none;
             font-weight: bold;
             font-size: 1.1rem;
+        }
+
+        nav ul li a.active {
+            color: #A64D79;
         }
 
         section {
@@ -88,8 +97,8 @@
             position: relative;
             height: 100vh;
             display: flex;
-            flex-direction: column; /* Stack elements vertically */
-            justify-content: flex-end; /* Push content to the bottom */
+            flex-direction: column;
+            justify-content: flex-end;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
 
@@ -99,11 +108,11 @@
         }
 
         #welcome h2 {
-            margin-bottom: 10px; /* Space between header and paragraph */
+            margin-bottom: 10px;
         }
 
         #welcome p {
-            margin-top: 10px; /* Additional space between header and paragraph */
+            margin-top: 10px;
         }
 
         /* About Me Section */
@@ -116,7 +125,6 @@
             font-size: 1.2rem;
             max-width: 800px;
             margin: 0 auto;
-            line-height: 1.6;
         }
 
         /* My Music Section */
@@ -152,11 +160,18 @@
         }
 
         .gallery-row img {
-            width: 300px; /* Fixed width */
-            height: 400px; /* Fixed height */
-            border: 5px solid #A64D79; /* Add border */
-            border-radius: 10px; /* Rounded corners */
-}
+            width: 300px;
+            height: 400px;
+            border: 5px solid #A64D79;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-row img:hover {
+            transform: scale(1.05);
+        }
+
         /* Contact Form */
         #contact {
             background: #1A1A1D;
@@ -213,62 +228,28 @@
             font-size: 1.2rem;
         }
 
-        /* Media Queries for Desktop */
-        @media (min-width: 1024px) {
+        /* Media Queries for Mobile */
+        @media (max-width: 768px) {
             header h1 {
-                font-size: 4rem;
+                font-size: 2.5rem;
             }
 
             header p {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
 
             nav ul li {
-                margin: 0 25px;
+                margin: 0 10px;
             }
 
             #about p {
-                font-size: 1.4rem;
-                max-width: 1000px;
-                margin: 0 auto;
+                font-size: 1rem;
             }
 
-           #gallery {
-    background: #6A1E55;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-#gallery h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.gallery-row {
-    display: flex; /* Enable Flexbox for layout */
-    justify-content: center; /* Center images horizontally */
-    align-items: center; /* Center images vertically */
-    gap: 20px; /* Add spacing between images */
-    flex-wrap: wrap; /* Allow wrapping to a new row on smaller screens */
-}
-
-.gallery-row img {
-    width: 300px; /* Set a consistent width */
-    height: auto; /* Maintain aspect ratio */
-    border: 5px solid #A64D79; /* Add border */
-    border-radius: 10px; /* Rounded corners */
-}
-
-            #contact form {
-                max-width: 700px;
+            .gallery-row img {
+                width: 100%;
+                height: auto;
             }
-        }
-
-        /* Remove bullet points in the "My Music" section */
-        #music ul {
-            list-style-type: none; /* Removes the bullet points */
-            padding: 0; /* Removes default padding */
-            margin: 0; /* Removes default margin */
         }
 
     </style>
@@ -316,13 +297,13 @@
     </section>
 
     <section id="gallery">
-    <h2>Other Means of Expression</h2>
-    <div class="gallery-row">
-        <img src="art.jpg" alt="Art">
-        <img src="fashion.JPG" alt="Fashion">
-        <img src="writing.jpg" alt="Writing">
-    </div>
-</section>
+        <h2>Other Means of Expression</h2>
+        <div class="gallery-row">
+            <img src="art.jpg" alt="Art">
+            <img src="fashion.JPG" alt="Fashion">
+            <img src="writing.jpg" alt="Writing">
+        </div>
+    </section>
 
     <section id="contact">
         <h2>Contact Me</h2>

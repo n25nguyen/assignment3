@@ -233,17 +233,31 @@
                 margin: 0 auto;
             }
 
-            #gallery {
-                text-align: left;
-            }
+           #gallery {
+    background: #6A1E55;
+    text-align: center;
+    padding: 40px 20px;
+}
 
-            .gallery-row {
-                justify-content: flex-start; /* Align images in a row */
-            }
+#gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
 
-            .gallery-row img {
-                width: 300px;
-            }
+.gallery-row {
+    display: flex;
+    justify-content: center; /* Ensure images are centered */
+    align-items: center; /* Center images vertically if they are wrapped */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-row img {
+    width: 300px;
+    border: 5px solid #A64D79;
+    border-radius: 10px;
+    margin: 10px; /* Adds spacing around each image */
+}
 
             #contact form {
                 max-width: 700px;
